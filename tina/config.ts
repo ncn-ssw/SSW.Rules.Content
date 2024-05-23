@@ -78,55 +78,21 @@ export default defineConfig({
               },
             },
             {
-                name: 'topic',
-                label: 'Topics',
-                path: 'content/topics',
-                format: 'json',
-                fields: [
-                    {
-                        type: 'string',
-                        name: 'slug',
-                        label: 'Slug',
-                        required: true,
-                    },
-                    {
-                        type: 'string',
-                        name: 'title',
-                        label: 'Title',
-                        required: true,
-                        isTitle: true,
-                    },
-                    {
-                        type: "object",
-                        list: true,
-                        name: "topics",
-                        label: "Topics",
-                        ui: {
-                            itemProps: (item) => {
-                                return { label: item?.category };
-                            },
-                        },
-                        fields: [
-                            {
-                                type: 'reference',
-                                name: 'category',
-                                label: 'Category',
-                                collections: ['category'],
-                            },
-                        ]
-                    }
-                ],
-            },
-            {
                 name: 'category',
                 label: 'Categories',
-                path: 'content/categories',
-                format: 'json',
+                path: 'categories',
+                format: 'md',
                 fields: [
                     {
                         type: 'string',
-                        name: 'slug',
-                        label: 'Slug',
+                        name: 'type',
+                        label: 'Type',
+                        required: false
+                    },
+                    {
+                        type: 'string',
+                        name: 'uri',
+                        label: 'URI Slug',
                         required: true,
                     },
                     {
@@ -139,7 +105,7 @@ export default defineConfig({
                     {
                         type: "object",
                         list: true,
-                        name: "rules",
+                        name: "index",
                         label: "Rules",
                         ui: {
                             itemProps: (item) => {
@@ -151,7 +117,7 @@ export default defineConfig({
                                 type: 'reference',
                                 name: 'rule',
                                 label: 'Rule',
-                                collections: ['rule', 'rule_md'],
+                                collections: ['rule'],
                                 required: true,
                             }
                         ]
@@ -160,13 +126,6 @@ export default defineConfig({
             },
             {
                 name: 'rule',
-                label: 'Rules',
-                path: 'rules',
-                format: 'mdx',
-                fields: ruleFields as TinaField[],
-            },
-            {
-                name: 'rule_md',
                 label: 'Rules',
                 path: 'rules',
                 format: 'md',
