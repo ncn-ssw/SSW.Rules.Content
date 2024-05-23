@@ -35,10 +35,11 @@ export default defineConfig({
     // Get this from tina.io
     token: process.env.TINA_TOKEN,
     tinaioConfig: {
-        frontendUrlOverride: 'http://localhost:3000',
-        identityApiUrlOverride: 'https://ncn-tmp-identity.tinajs.dev',
-        contentApiUrlOverride: 'https://ncn-tmp-content.tinajs.dev'
-    },
+        frontendUrlOverride: 'https://app.tinajs.dev',
+        identityApiUrlOverride: 'https://identity.tinajs.dev',
+        contentApiUrlOverride: 'https://content.tinajs.dev',
+        assetsApiUrlOverride: 'https://assets-api.tinajs.dev'
+      },
     build: {
         outputFolder: "admin",
         publicFolder: "public",
