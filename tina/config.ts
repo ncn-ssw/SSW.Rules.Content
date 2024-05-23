@@ -79,7 +79,7 @@ export default defineConfig({
             },
             {
                 name: 'category',
-                label: 'Categories',
+                label: 'Category List',
                 path: 'categories',
                 format: 'md',
                 fields: [
