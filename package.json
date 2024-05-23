@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build"
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"npx next dev\"",
+    "build": "tinacms build && npx next build",
+    "start": "tinacms build && npx next build && npx next start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tinacms": "^1.6.3"
+    "tinacms": "^1.6.3",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.5.45",
