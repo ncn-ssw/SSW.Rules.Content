@@ -1,14 +1,13 @@
 ---
 type: rule
-title: Do you know the 3 steps to completing a PBI?
 uri: 3-steps-to-a-pbi
 authors:
   - title: Adam Cogan
-    url: https://ssw.com.au/people/adam-cogan
+    url: 'https://ssw.com.au/people/adam-cogan'
   - title: Matt Wicks
-    url: https://ssw.com.au/people/matt-wicks
+    url: 'https://ssw.com.au/people/matt-wicks'
   - title: Piers Sinclair
-    url: https://ssw.com.au/people/piers-sinclair
+    url: 'https://ssw.com.au/people/piers-sinclair'
 related:
   - turn-emails-into-pbis
   - have-a-definition-of-ready
@@ -21,11 +20,13 @@ related:
 redirects:
   - do-you-know-the-3-steps-to-completing-a-pbi
   - do-you-know-the-3-steps-to-a-pbi
-created: 2013-08-30T06:33:21.000Z
+created: '2013-08-30T06:33:21.000Z'
 archivedreason: null
 guid: 1de9df77-9b69-4242-b648-e08e5980e9a6
-
+title: Do you know the 3 steps to completing a PBI?
 ---
+
+This is the first item
 
 A PBI (Product Backlog Item) is a term commonly used in Agile project management and software development to represent a unit of work or an item in the Product Backlog, which is a prioritized list of features, enhancements, or fixes to be addressed in a project.
 
@@ -46,7 +47,7 @@ You have a backlog of PBIs (tasks, features, and fixes) which are already priori
 1. Take the next PBI in the list by assigning it to yourself
 2. Break down that PBI into clear and actionable tasks
 
-![Figure: "Testing Task" added to a PBI. This is the board the team will use for 90% of the Sprint, so that testing is visible to everyone](Testing-task.png)
+![Figure: "Testing Task" added to a PBI. This is the board the team will use for 90% of the Sprint, so that testing is visible to everyone](/uploadsTesting-task.png)
 
 ### 2. Time to Code
 
@@ -69,5 +70,5 @@ This should be easiest part!
 Congrats, your PBI is now ready to be demonstrated during your Sprint Review!
 
 ::: good
-![Figure: The important steps in a PBI lifecycle. Print this "SSW 3 Steps to a PBI pdf" and put it on your 'War Room' wall](3StepsToAPBI.jpg)
+![Figure: The important steps in a PBI lifecycle. Print this "SSW 3 Steps to a PBI pdf" and put it on your 'War Room' wall](/uploads3StepsToAPBI.jpg)
 :::
