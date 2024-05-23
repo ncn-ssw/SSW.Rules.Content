@@ -1,0 +1,21 @@
+{
+  "name": "ssw.rules.content",
+  "version": "1.0.0",
+  "description": "<img src=\"https://raw.githubusercontent.com/SSWConsulting/SSW.Rules.Content/main/_docs/images/ssw-banner.png\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tinacms": "^1.6.3"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.45",
+    "@types/node": "^20.12.12"
+  }
+}
